@@ -14,3 +14,7 @@ backend/**/__pycache__/
 # =========================
 backend/.env
 .env
+
+# Medical data / large files
+backend/medical_data/
+*.pdf
