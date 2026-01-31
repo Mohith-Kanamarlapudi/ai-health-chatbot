@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | AI Health Chatbot</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Emoji Styling */
+      .emoji-icon {
+        font-size: 60px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .emoji-icon {
+          font-size: 48px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .emoji-icon {
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="container nav-flex">
+        <h2 class="nav-title">AI Health Chatbot</h2>
+        <button class="btn-logout" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="home-grid-full">
+        <!-- Chatbot -->
+        <a class="home-card-large" onclick="goTo('chatbot.html')">
+          <div class="emoji-icon">💬</div>
+          <h3>Chatbot</h3>
+          <p>Ask medical questions & get expert answers</p>
+        </a>
+
+        <!-- Diseases -->
+        <a class="home-card-large" onclick="goTo('disease.html')">
+          <div class="emoji-icon">🦠</div>
+          <h3>Diseases</h3>
+          <p>Explore diseases, causes & treatments</p>
+        </a>
+
+        <!-- Quiz -->
+        <a class="home-card-large" onclick="goTo('quiz.html')">
+          <div class="emoji-icon">🧠</div>
+          <h3>Health Quiz</h3>
+          <p>Test your health knowledge</p>
+        </a>
+
+        <!-- Quiz History (NEW CARD ADDED) -->
+        <a class="home-card-large" onclick="goTo('quiz_history.html')">
+          <div class="emoji-icon">📊</div>
+          <h3>Quiz History</h3>
+          <p>View your previous quiz scores</p>
+        </a>
+      </div>
+    </div>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>

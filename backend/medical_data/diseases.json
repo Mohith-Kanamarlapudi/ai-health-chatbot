@@ -1,0 +1,407 @@
+[
+  {
+    "category": "Infectious Diseases",
+    "items": [
+      {
+        "id": 1,
+        "name": "Influenza (Flu)",
+        "short_description": "A viral respiratory infection.",
+        "information": "Influenza is caused by influenza viruses affecting the nose, throat, and lungs.",
+        "symptoms": ["Fever", "Cough", "Sore throat", "Body aches", "Fatigue"],
+        "precautions": ["Wear a mask", "Avoid crowds", "Rest"],
+        "prevention": ["Vaccination", "Hand washing"],
+        "medicines": [
+          {
+            "name": "Oseltamivir",
+            "purpose": "Antiviral",
+            "dosage": "75mg twice daily"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "COVID-19",
+        "short_description": "A contagious viral disease caused by SARS-CoV-2.",
+        "information": "COVID-19 affects primarily the respiratory system.",
+        "symptoms": ["Fever", "Dry cough", "Loss of taste", "Fatigue"],
+        "precautions": ["Mask", "Sanitizer", "Avoid gatherings"],
+        "prevention": ["Vaccination"],
+        "medicines": [
+          { "name": "Paracetamol", "purpose": "Fever", "dosage": "650mg" }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Tuberculosis",
+        "short_description": "A bacterial infection affecting the lungs.",
+        "information": "TB is caused by Mycobacterium tuberculosis and can spread through air.",
+        "symptoms": ["Chronic cough", "Weight loss", "Fatigue"],
+        "precautions": ["Cover mouth", "Avoid close contact"],
+        "prevention": ["BCG vaccine"],
+        "medicines": [
+          {
+            "name": "Rifampicin",
+            "purpose": "Antibacterial",
+            "dosage": "600mg daily"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Malaria",
+        "short_description": "A mosquito-borne parasitic disease.",
+        "information": "Transmitted through bites of infected Anopheles mosquitoes.",
+        "symptoms": ["Fever", "Chills", "Sweating"],
+        "precautions": ["Use mosquito nets", "Insect repellant"],
+        "prevention": ["Prevent mosquito breeding"],
+        "medicines": [
+          {
+            "name": "Chloroquine",
+            "purpose": "Antimalarial",
+            "dosage": "As prescribed"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Dengue",
+        "short_description": "A viral infection transmitted by Aedes mosquitoes.",
+        "information": "Dengue can cause high fever and severe body pain.",
+        "symptoms": ["High fever", "Joint pain", "Rashes"],
+        "precautions": ["Avoid mosquito bites"],
+        "prevention": ["Prevent stagnant water"],
+        "medicines": [
+          { "name": "Paracetamol", "purpose": "Fever", "dosage": "500mg" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "category": "Chronic Diseases",
+    "items": [
+      {
+        "id": 6,
+        "name": "Hypertension",
+        "short_description": "High blood pressure condition.",
+        "information": "Hypertension increases the risk of heart disease and stroke.",
+        "symptoms": ["Headache", "Chest pain", "Dizziness"],
+        "precautions": ["Low salt diet", "Exercise"],
+        "prevention": ["Stress management"],
+        "medicines": [
+          {
+            "name": "Amlodipine",
+            "purpose": "BP control",
+            "dosage": "5mg daily"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Diabetes",
+        "short_description": "A condition with high blood sugar levels.",
+        "information": "Caused due to insufficient insulin or insulin resistance.",
+        "symptoms": ["Frequent urination", "Thirst", "Fatigue"],
+        "precautions": ["Avoid sugar", "Exercise"],
+        "prevention": ["Healthy diet"],
+        "medicines": [
+          { "name": "Metformin", "purpose": "Sugar control", "dosage": "500mg" }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Asthma",
+        "short_description": "A chronic inflammatory airway disease.",
+        "information": "Asthma causes difficulty in breathing due to airway inflammation.",
+        "symptoms": ["Wheezing", "Shortness of breath"],
+        "precautions": ["Avoid dust"],
+        "prevention": ["Use inhalers regularly"],
+        "medicines": [
+          {
+            "name": "Salbutamol Inhaler",
+            "purpose": "Bronchodilator",
+            "dosage": "As needed"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Chronic Kidney Disease",
+        "short_description": "Gradual loss of kidney function.",
+        "information": "CKD affects the body's ability to filter blood.",
+        "symptoms": ["Swelling", "Fatigue", "Poor appetite"],
+        "precautions": ["Limit salt", "Regular checkups"],
+        "prevention": ["Avoid dehydration"],
+        "medicines": [
+          {
+            "name": "ACE inhibitors",
+            "purpose": "BP management",
+            "dosage": "As prescribed"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Arthritis",
+        "short_description": "Joint inflammation causing pain.",
+        "information": "Arthritis commonly affects hands, knees, and spine.",
+        "symptoms": ["Joint pain", "Stiffness"],
+        "precautions": ["Warm therapy", "Avoid strain"],
+        "prevention": ["Healthy weight"],
+        "medicines": [
+          { "name": "Ibuprofen", "purpose": "Pain relief", "dosage": "400mg" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "category": "Respiratory Diseases",
+    "items": [
+      {
+        "id": 11,
+        "name": "Pneumonia",
+        "short_description": "Lung infection causing inflammation.",
+        "information": "Pneumonia fills air sacs with fluid or pus.",
+        "symptoms": ["Cough", "Fever", "Chest pain"],
+        "precautions": ["Avoid cold", "Stay hydrated"],
+        "prevention": ["Vaccination"],
+        "medicines": [
+          {
+            "name": "Azithromycin",
+            "purpose": "Antibiotic",
+            "dosage": "500mg daily"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Bronchitis",
+        "short_description": "Inflammation of bronchial tubes.",
+        "information": "Chronic bronchitis is often caused by smoking.",
+        "symptoms": ["Cough", "Mucus production"],
+        "precautions": ["Avoid smoke"],
+        "prevention": ["Quit smoking"],
+        "medicines": [
+          {
+            "name": "Cough syrups",
+            "purpose": "Symptom relief",
+            "dosage": "As needed"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "COPD",
+        "short_description": "Chronic obstructive pulmonary disease.",
+        "information": "COPD is a progressive respiratory disease.",
+        "symptoms": ["Breathlessness", "Chronic cough"],
+        "precautions": ["Avoid pollution"],
+        "prevention": ["No smoking"],
+        "medicines": [
+          {
+            "name": "Inhaled steroids",
+            "purpose": "Airway relief",
+            "dosage": "As prescribed"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Sinusitis",
+        "short_description": "Inflammation of sinus cavities.",
+        "information": "Causes sinus pressure and congestion.",
+        "symptoms": ["Headache", "Congestion"],
+        "precautions": ["Steam inhalation"],
+        "prevention": ["Hydration"],
+        "medicines": [
+          {
+            "name": "Cetirizine",
+            "purpose": "Allergy relief",
+            "dosage": "10mg"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Lung Fibrosis",
+        "short_description": "Scarring of lung tissue.",
+        "information": "Makes it hard for lungs to function properly.",
+        "symptoms": ["Dry cough", "Fatigue"],
+        "precautions": ["Avoid pollutants"],
+        "prevention": ["Regular checkups"],
+        "medicines": [
+          {
+            "name": "Pirfenidone",
+            "purpose": "Fibrosis control",
+            "dosage": "As prescribed"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "category": "Digestive Diseases",
+    "items": [
+      {
+        "id": 16,
+        "name": "Gastritis",
+        "short_description": "Inflammation of stomach lining.",
+        "information": "Caused by infection, spicy food, or stress.",
+        "symptoms": ["Burning pain", "Nausea"],
+        "precautions": ["Avoid spicy foods"],
+        "prevention": ["Eat on time"],
+        "medicines": [
+          {
+            "name": "Pantoprazole",
+            "purpose": "Acidity relief",
+            "dosage": "40mg"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Ulcer",
+        "short_description": "Sores in stomach or intestine lining.",
+        "information": "Caused by H. pylori bacteria or NSAIDs.",
+        "symptoms": ["Stomach pain", "Heartburn"],
+        "precautions": ["Avoid alcohol"],
+        "prevention": ["Do not skip meals"],
+        "medicines": [
+          {
+            "name": "Omeprazole",
+            "purpose": "Acid reduction",
+            "dosage": "20mg"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Irritable Bowel Syndrome",
+        "short_description": "A digestive system disorder.",
+        "information": "IBS affects large intestine function.",
+        "symptoms": ["Abdominal pain", "Bloating"],
+        "precautions": ["Avoid junk food"],
+        "prevention": ["High-fiber diet"],
+        "medicines": [
+          { "name": "Dicyclomine", "purpose": "Gut relief", "dosage": "10mg" }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Liver Cirrhosis",
+        "short_description": "Severe liver scarring.",
+        "information": "Caused by alcohol, hepatitis, or fatty liver.",
+        "symptoms": ["Fatigue", "Swelling"],
+        "precautions": ["Avoid alcohol"],
+        "prevention": ["Healthy lifestyle"],
+        "medicines": [
+          {
+            "name": "Diuretics",
+            "purpose": "Fluid control",
+            "dosage": "As prescribed"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Pancreatitis",
+        "short_description": "Inflammation of the pancreas.",
+        "information": "Often caused by gallstones or alcohol.",
+        "symptoms": ["Severe pain", "Vomiting"],
+        "precautions": ["Avoid oily food"],
+        "prevention": ["Healthy diet"],
+        "medicines": [
+          {
+            "name": "Pain relievers",
+            "purpose": "Pain control",
+            "dosage": "As needed"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "category": "Genetic Disorders",
+    "items": [
+      {
+        "id": 21,
+        "name": "Thalassemia",
+        "short_description": "Inherited blood disorder.",
+        "information": "Affects hemoglobin production.",
+        "symptoms": ["Fatigue", "Weakness"],
+        "precautions": ["Regular blood tests"],
+        "prevention": ["Genetic counseling"],
+        "medicines": [
+          { "name": "Folic acid", "purpose": "Blood support", "dosage": "5mg" }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Sickle Cell Anemia",
+        "short_description": "Red blood cells become sickle-shaped.",
+        "information": "Causes anemia and pain episodes.",
+        "symptoms": ["Pain", "Swelling"],
+        "precautions": ["Avoid dehydration"],
+        "prevention": ["Newborn screening"],
+        "medicines": [
+          {
+            "name": "Hydroxyurea",
+            "purpose": "Pain prevention",
+            "dosage": "As directed"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Cystic Fibrosis",
+        "short_description": "Affects lungs and digestive system.",
+        "information": "Thick mucus buildup affects organs.",
+        "symptoms": ["Cough", "Breathing issues"],
+        "precautions": ["Avoid infections"],
+        "prevention": ["Genetic testing"],
+        "medicines": [
+          {
+            "name": "Enzyme supplements",
+            "purpose": "Digestion",
+            "dosage": "As prescribed"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Down Syndrome",
+        "short_description": "A genetic chromosome 21 disorder.",
+        "information": "Causes developmental delays.",
+        "symptoms": ["Learning delay"],
+        "precautions": ["Regular medical checkups"],
+        "prevention": ["Prenatal screening"],
+        "medicines": [
+          {
+            "name": "Supportive therapy",
+            "purpose": "General",
+            "dosage": "N/A"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Hemophilia",
+        "short_description": "Blood clotting disorder.",
+        "information": "Caused by low clotting factor.",
+        "symptoms": ["Excess bleeding"],
+        "precautions": ["Avoid injuries"],
+        "prevention": ["Genetic counseling"],
+        "medicines": [
+          {
+            "name": "Clotting factor VIII",
+            "purpose": "Bleeding control",
+            "dosage": "As prescribed"
+          }
+        ]
+      }
+    ]
+  }
+]

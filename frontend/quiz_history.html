@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Quiz History</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+        font-family: Arial;
+      }
+      .container {
+        max-width: 700px;
+        margin: 70px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 14px;
+        border: 2px solid #b2dfdb;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+      th,
+      td {
+        padding: 12px;
+        border: 1px solid #80cbc4;
+        text-align: center;
+      }
+      th {
+        background: #e0f2f1;
+        color: #004d40;
+      }
+      .back-btn {
+        padding: 10px 18px;
+        background: #00695c;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Your Quiz History</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Score</th>
+            <th>Total</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="historyTable"></tbody>
+      </table>
+
+      <br />
+      <a href="index.html" class="back-btn">Back</a>
+    </div>
+
+    <script src="js/quiz_history.js"></script>
+  </body>
+</html>

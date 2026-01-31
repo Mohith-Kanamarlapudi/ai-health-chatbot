@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login | AI Health Chatbot</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .auth-header {
+        background: linear-gradient(135deg, #2b7bff, #6ea8ff);
+        padding: 18px;
+        border-radius: var(--radius) var(--radius) 0 0;
+        color: white;
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      .password-wrap {
+        position: relative;
+      }
+
+      .toggle-eye {
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+        color: var(--text-light);
+      }
+
+      .auth-wrapper {
+        padding: 0 !important;
+        overflow: hidden;
+      }
+
+      .auth-body {
+        padding: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="auth-wrapper">
+      <div class="auth-header">Login Account</div>
+
+      <div class="auth-body">
+        <input id="email" type="email" placeholder="Email Address" />
+
+        <div class="password-wrap">
+          <input id="password" type="password" placeholder="Password" />
+          <span class="toggle-eye" onclick="togglePassword()">👁️</span>
+        </div>
+
+        <button class="btn btn-primary" onclick="login()">Login</button>
+
+        <p>
+          Don't have an account?
+          <a href="signup.html">Create one</a>
+        </p>
+
+        <p id="error-msg" class="error-msg"></p>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+
+    <script>
+      function togglePassword() {
+        const pwd = document.getElementById("password");
+        pwd.type = pwd.type === "password" ? "text" : "password";
+      }
+    </script>
+  </body>
+</html>
