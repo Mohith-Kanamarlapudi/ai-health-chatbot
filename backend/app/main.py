@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.auth.routes_auth import router as auth_router
 from app.api.chatbot import router as chatbot_router
+from app.api import symptom_checker
 from app.api import diseases
 from app.api import quiz
 from app.database import Base, engine
@@ -30,6 +31,7 @@ app.add_middleware(
 # -----------------------------
 app.include_router(auth_router)
 app.include_router(chatbot_router)
+app.include_router(symptom_checker.router, prefix="/api", tags=["Symptom Checker"])
 app.include_router(diseases.router, prefix="/api", tags=["Diseases"])
 app.include_router(quiz.router)
 
