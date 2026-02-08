@@ -21,8 +21,7 @@ class Settings(BaseSettings):
     OPENROUTER_API_KEY: str
 
     model_config = {
-        "env_file": ".env",
-        "extra": "allow"   # Allows additional env vars safely
+        "extra": "allow"
     }
 
 settings = Settings()
