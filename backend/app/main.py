@@ -12,10 +12,14 @@ from app.database import Base, engine
 from app.rag.rag_engine import build_rag_pipeline
 from app.auth.jwt_handler import get_current_user
 
-# Create DB tables automatically
-Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="AI Health Chatbot API")
+
+# Create DB tables AFTER environment variables load
+@app.on_event("startup")
+def startup_event():
+    Base.metadata.create_all(bind=engine)
+
 
 # CORS
 app.add_middleware(
