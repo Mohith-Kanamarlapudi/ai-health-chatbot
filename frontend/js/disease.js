@@ -1,10 +1,10 @@
-// Redirect if not logged in
 (function checkAuth() {
   const token = localStorage.getItem("token");
   if (!token) window.location.href = "login.html";
 })();
 
-const API_URL = "http://127.0.0.1:8000/api/diseases";
+const API_URL =
+  "https://ai-health-chatbot-production.up.railway.app/api/diseases";
 
 let allData = [];
 
@@ -33,7 +33,6 @@ function populateCategories() {
   document.getElementById("searchBar").oninput = filterDiseases;
 }
 
-// Render all categories
 function renderCategories(data) {
   const container = document.getElementById("diseaseCategories");
   container.innerHTML = "";
@@ -61,7 +60,6 @@ function renderCategories(data) {
   });
 }
 
-// Filter Logic
 function filterDiseases() {
   let term = document.getElementById("searchBar").value.toLowerCase();
   let category = document.getElementById("categorySelect").value;

@@ -3,7 +3,8 @@
   if (!token) window.location.href = "login.html";
 })();
 
-const API_URL = "http://127.0.0.1:8000/api/diseases";
+const API_URL =
+  "https://ai-health-chatbot-production.up.railway.app/api/diseases";
 const params = new URLSearchParams(window.location.search);
 const diseaseId = params.get("id");
 

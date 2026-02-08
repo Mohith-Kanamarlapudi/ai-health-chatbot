@@ -10,7 +10,6 @@ const symptomsList = [
   "dizziness",
 ];
 
-// Generate Tag Buttons
 const tagsArea = document.getElementById("tagsArea");
 let selectedSymptoms = [];
 
@@ -32,7 +31,6 @@ symptomsList.forEach((sym) => {
   tagsArea.appendChild(tag);
 });
 
-// Handle Analyze Button
 document.getElementById("analyzeBtn").addEventListener("click", async () => {
   if (selectedSymptoms.length === 0) {
     alert("Please select at least one symptom.");
@@ -45,9 +43,6 @@ document.getElementById("analyzeBtn").addEventListener("click", async () => {
     return;
   }
 
-  // -------------------------------
-  // SHOW LOADING UI Immediately
-  // -------------------------------
   const container = document.getElementById("resultsArea");
   container.innerHTML = `
         <div class="result-card" style="text-align:center;">
@@ -58,15 +53,17 @@ document.getElementById("analyzeBtn").addEventListener("click", async () => {
         </div>
     `;
 
-  // Call API
-  const response = await fetch("http://127.0.0.1:8000/api/symptom-checker", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: "Bearer " + token,
+  const response = await fetch(
+    "https://ai-health-chatbot-production.up.railway.app/api/symptom-checker",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+      body: JSON.stringify({ symptoms: selectedSymptoms }),
     },
-    body: JSON.stringify({ symptoms: selectedSymptoms }),
-  });
+  );
 
   const result = await response.json();
 
@@ -81,17 +78,14 @@ document.getElementById("analyzeBtn").addEventListener("click", async () => {
   renderResults(analysis);
 });
 
-// Render Results
 function renderResults(analysis) {
   const container = document.getElementById("resultsArea");
   container.innerHTML = "";
 
-  // Title
   const title = document.createElement("h2");
   title.innerHTML = "Health Analysis";
   container.appendChild(title);
 
-  // Possible Diseases
   analysis.possible_diseases.forEach((d) => {
     const card = document.createElement("div");
     card.className = "result-card";
@@ -108,7 +102,6 @@ function renderResults(analysis) {
     container.appendChild(card);
   });
 
-  // Home Remedies
   const rem = document.createElement("div");
   rem.className = "result-card";
   rem.innerHTML = `
@@ -117,7 +110,6 @@ function renderResults(analysis) {
     `;
   container.appendChild(rem);
 
-  // Doctor Advice
   const doc = document.createElement("div");
   doc.className = "result-card";
   doc.innerHTML = `

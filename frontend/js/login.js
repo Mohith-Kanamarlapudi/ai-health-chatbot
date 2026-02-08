@@ -1,4 +1,4 @@
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://ai-health-chatbot-production.up.railway.app";
 
 // If token already exists, redirect to home
 (function checkAlreadyLoggedIn() {

@@ -1,9 +1,12 @@
 (function loadHistory() {
   const token = localStorage.getItem("token");
 
-  fetch("http://127.0.0.1:8000/api/quiz/my-scores", {
-    headers: { Authorization: `Bearer ${token}` },
-  })
+  fetch(
+    "https://ai-health-chatbot-production.up.railway.app/api/quiz/my-scores",
+    {
+      headers: { Authorization: `Bearer ${token}` },
+    },
+  )
     .then((res) => res.json())
     .then((scores) => {
       const table = document.getElementById("historyTable");

@@ -258,7 +258,6 @@ const questionBank = [
     answer: 1,
   },
 ];
-
 // --------------------------
 // Select 10 random questions
 // --------------------------
@@ -425,7 +424,7 @@ function showResult() {
 function saveScoreToBackend(score, total) {
   const token = localStorage.getItem("token");
 
-  fetch("http://127.0.0.1:8000/api/quiz/save", {
+  fetch("https://ai-health-chatbot-production.up.railway.app/api/quiz/save", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -441,7 +440,4 @@ function saveScoreToBackend(score, total) {
 function restartQuiz() {
   document.getElementById("resultScreen").classList.add("hide");
   showInstructions();
-}
-function goHome() {
-  window.location.href = "index.html";
 }
