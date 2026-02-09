@@ -1,4 +1,4 @@
-const BASE_URL = "https://ai-health-chatbot-production.up.railway.app";
+const BASE_URL = "https://ai-chat-app-production-b7f4.up.railway.app";
 
 async function signup() {
   const full_name = document.getElementById("name").value.trim();

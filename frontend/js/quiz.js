@@ -424,7 +424,7 @@ function showResult() {
 function saveScoreToBackend(score, total) {
   const token = localStorage.getItem("token");
 
-  fetch("https://ai-health-chatbot-production.up.railway.app/api/quiz/save", {
+  fetch("https://ai-chat-app-production-b7f4.up.railway.app/api/quiz/save", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

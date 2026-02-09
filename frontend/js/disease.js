@@ -4,7 +4,7 @@
 })();
 
 const API_URL =
-  "https://ai-health-chatbot-production.up.railway.app/api/diseases";
+  "https://ai-chat-app-production-b7f4.up.railway.app/api/diseases";
 
 let allData = [];
 

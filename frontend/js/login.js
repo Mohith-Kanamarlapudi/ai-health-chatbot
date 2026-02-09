@@ -1,4 +1,4 @@
-const BASE_URL = "https://ai-health-chatbot-production.up.railway.app";
+const BASE_URL = "https://ai-chat-app-production-b7f4.up.railway.app";
 
 // If token already exists, redirect to home
 (function checkAlreadyLoggedIn() {

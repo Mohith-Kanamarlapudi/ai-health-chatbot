@@ -2,7 +2,7 @@
   const token = localStorage.getItem("token");
 
   fetch(
-    "https://ai-health-chatbot-production.up.railway.app/api/quiz/my-scores",
+    "https://ai-chat-app-production-b7f4.up.railway.app/api/quiz/my-scores",
     {
       headers: { Authorization: `Bearer ${token}` },
     },

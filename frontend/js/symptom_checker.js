@@ -54,7 +54,7 @@ document.getElementById("analyzeBtn").addEventListener("click", async () => {
     `;
 
   const response = await fetch(
-    "https://ai-health-chatbot-production.up.railway.app/api/symptom-checker",
+    "https://ai-chat-app-production-b7f4.up.railway.app/api/symptom-checker",
     {
       method: "POST",
       headers: {
